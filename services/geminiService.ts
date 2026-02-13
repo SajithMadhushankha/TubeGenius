@@ -30,6 +30,8 @@ export const generateSeoStrategy = async (
     4. 3 distinct Hook angles for titles.
     5. Key Entities mentioned.
 
+    IMPORTANT: Detect the language of the Input Data below. The Primary Keyword, Secondary Keywords, and Hooks MUST be in that same language.
+
     Input Data:
     ${input.substring(0, 20000)}
   `;
@@ -81,7 +83,9 @@ export const generateSeoContent = async (
        - Ensure natural keyword insertion throughout the text.
     3. Tags: 20 mixed tags (broad/niche).
     4. Hashtags: 3-5 relevant hashtags.
-    5. Thumbnail Prompt: Detailed Art Director instruction for an AI image generator. Subject, composition, lighting, colors. Aspect Ratio 16:9.
+    5. Thumbnail Prompt: Detailed Art Director instruction for an AI image generator. Subject, composition, lighting, colors. Aspect Ratio 16:9. Keep this in English.
+
+    IMPORTANT: Detect the language of the "Original Context". Generate Titles, Descriptions, Tags, and Hashtags in that SAME language.
 
     Strictly adhere to character limits.
   `;
